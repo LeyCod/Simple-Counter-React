@@ -1,26 +1,38 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+//Style
+import "./counter.css";
 
-//create your first component
-const Home = () => {
+const Counter = (props) => {
 	return (
-		<div>
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="Container-fluid">
+			<div className="row justify-content-center text-white">
+				<div className="col-2 digit shadow p-2 me-1 rounded-3">
+					<i class="far fa-clock #offset"></i>
+				</div>
+				<div className="col-2 digit shadow p-2 me-1 rounded-3">
+					{props.days}
+				</div>
+				<div className="col-2 digit shadow p-2 me-1 rounded-3">
+					{props.hours}
+				</div>
+				<div className="col-2 digit shadow p-2 me-1 rounded-3">
+					{props.minutes}
+				</div>
+				<div className="col-2 digit shadow p-2 rounded-3">
+					{props.seconds}
+				</div>
+			</div>
 		</div>
 	);
 };
 
-export default Home;
+Counter.propTypes = {
+	seconds: PropTypes.number,
+	minutes: PropTypes.number,
+	hours: PropTypes.number,
+	days: PropTypes.number,
+};
+
+export default Counter;
