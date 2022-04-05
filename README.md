@@ -10,7 +10,7 @@ Create a simple counter with react:
 
 -   The component does not need a local state, you can pass the number of seconds as props.
 
-![preview]()
+![preview](https://github.com/LeyCod/Simple-Counter-React/blob/main/src/assets/img/SimpleCounterWithReact.png)
 
 ### Fundamentals
 
