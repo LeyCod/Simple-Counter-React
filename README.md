@@ -2,15 +2,15 @@
 
 ## To-Dos:
 
-Create an algorithm that randomly builds a card on every refresh:
+Create a simple counter with react:
 
--   Every time the website refreshes a new random card needs to show.
+-   Use the ReactDOM.render() to render the component into the web-app.
 
--   The card must have one of the possible suits: Hearts, Spades, Clubs and Diamonds.
+-   Use the setInterval() function to re-render the component on every second.
 
--   The card value must be one of the following: 1 to 10, King, Queen, Jack or Ace, (no joker).
+-   The component does not need a local state, you can pass the number of seconds as props.
 
-![preview](https://github.com/LeyCod/Random-Card-Dealer/blob/main/src/assets/img/RandomCardDealerPreview.png)
+![preview]()
 
 ### Fundamentals
 
@@ -18,11 +18,7 @@ This exercise covers the following fundamentals:
 
 1. Basic structure for React website.
 2. Use of Props.
-3. Using google fonts.
-4. Using the different selectors available in CSS.
-5. Working with boxes: border, padding and margins.
-6. Javascript variables, functions, algorithms.
-7. Events.
+3. Use the setInterval() function.
 
 ## How can i preview the project?
 
